@@ -1,0 +1,52 @@
+.promo {
+    min-height: 900px;
+    position: relative;
+    background: url(..//img/main_bg.jpg) no-repeat 50%/cover;
+    padding-top: 205px;
+    &__title {
+        width: 660px;
+        margin-top: 10px;
+    }
+    &__subtitle {
+        position: relative;
+        z-index: 2;
+        @include circle;
+        padding-left: 10px;
+    }
+    &__btns {
+        margin-top: 25px;
+        display: flex;
+        width: 250px;
+        justify-content: space-around;
+        align-items: center;
+    }
+    &__link {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 21px;
+        color: #fff;
+        text-align: center;
+        transition: 0.2s all;
+        
+        &:hover {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.781);
+
+        }
+        &:active {
+            color:rgba(255, 255, 255, 0.938);
+            &:nth-child(2) {
+                color: #007cadc5;
+            }
+        }
+
+    }
+    &__signature {
+        position: absolute;
+        top: 21px;
+        right: 160px;
+        height: 150px;
+        width: 300px;
+    }
+}
+
