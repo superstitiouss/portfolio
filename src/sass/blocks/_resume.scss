@@ -1,0 +1,97 @@
+.resume {
+    padding-top: 120px;
+    &__title {
+        position: relative;
+        @include circle;
+        text-align: center;
+        &::before {
+            top: -13%;
+            left: 50%;
+            transform: translateX(-51%);
+            width: 110px;
+            animation-play-state: paused;
+        }
+    }
+    &__subtitle {
+        text-align: center;
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 425px 425px;
+        column-gap: 136px;
+        padding: 60px 65px 0 65px;
+    }
+    &__column {
+        &-title {
+            position: relative;
+            padding-left: 35px;
+            &:before {
+                content: '';
+                position: absolute;
+                border-radius: 100%;
+                background: $main-color;
+                width: 15px;
+                height: 15px;
+                left: -7px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        ul {
+            list-style-type: none;
+            li {
+                position: relative;
+                &:after {
+                    content: '';
+                    position: absolute;
+                    width: 1px;
+                    height: calc(100% + 16px);
+                    background-color: #fff;
+                    top: -16px;
+                    left: 0;
+                }
+            }
+        }
+    }
+    &__item {
+        position: relative;
+        &:before {
+            content: '';
+            height: 1px;
+            width: 52px;
+            position: absolute;
+            background-color: #fff;
+            top: 55px;
+        }
+        &-head {
+            position: relative;
+            padding: 36px 0 0 100px;
+        }
+        &-body {
+            padding-left: 43px;
+            margin-top: 12px;
+        }
+        &-icon {
+            position: absolute;
+            top: 39px;
+            left: 48px;
+            @include circle;
+            &:before {
+                animation-play-state: paused;
+            }
+            img {
+                position: absolute;
+                left: 13px;
+                top: 10px;
+            }
+        }
+        &-location {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        &-body {
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+}
