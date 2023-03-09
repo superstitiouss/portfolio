@@ -8,6 +8,9 @@
 @import 'base/animations';
 @import 'blocks/sidepanel';
 @import 'blocks/menu';
+@import 'blocks/bio';
+@import 'blocks/resume';
+@import 'blocks/skills';
 
 
 
@@ -26,4 +29,10 @@ body {
 .container {
     width: 1140px;
     margin: 0 auto;
+}
+
+.divider {
+    width: 67px;
+    border: 2px solid $divider-color;
+    margin: 25px auto 0 auto;
 }
