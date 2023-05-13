@@ -17,3 +17,10 @@ hamburger.addEventListener('click', () => {
 closeElem.addEventListener('click', () => {
     hamburger.classList.remove('active');
 });
+
+const percents = document.querySelectorAll('.skills__value__item-percent'),
+    dividers = document.querySelectorAll('.skills__value__item-score span');
+
+percents.forEach( (item, i) => {
+    dividers[i].style.width = item.innerHTML;
+});

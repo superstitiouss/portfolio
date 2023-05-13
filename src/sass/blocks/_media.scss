@@ -1,0 +1,119 @@
+@media (max-width: 1370px) {
+    .sidepanel {
+       display: none;
+    }
+}  
+@media (max-width: 1200px) {
+ .container {
+    max-width: 960px;
+ }
+ .bio {
+    &__wrapper {
+        grid-template-columns: 400px 520px;
+        column-gap: 40px;
+    }
+    &__skills {
+        column-gap: 20px;
+        grid-template: repeat(2,minmax(115px,auto))/repeat(2,250px);
+        &-item {
+            grid-template-columns: 40px 195px;
+            column-gap: 15px;
+        }
+    }
+ }
+}
+
+@media (max-width: 992px) {
+ .container {
+    max-width: 720px;
+ }
+ .bio {
+    padding-top: 55px;
+    &__wrapper {
+        grid-template-columns: 300px 380px;
+    }
+    &__skills {
+        grid-template-columns: 360px;
+        row-gap: 25px;
+        grid-auto-rows: minmax(115px,auto);
+        &-item {
+            grid-template-columns: 40px 313px;
+            column-gap: 20px;
+        }
+    }
+ }
+
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+     }
+    .title {
+        &_fz48 {
+            font-size: 36px;
+        }
+    }
+
+     .promo {
+        &__title {
+            line-height: 50px;
+            width: 510px;
+        }
+        &__signature {
+            right: 50px;
+        }
+     }
+     .bio {
+        padding-top: 55px;
+        &__wrapper {
+            grid-template: 400px auto auto / 1fr;
+        }
+        &__img {
+            grid-row: unset;
+        }
+        &__skills {
+            grid-template-columns: repeat(2, 260px);
+            &-item {
+                grid-template-columns: 40px 200px;
+                column-gap: 20px;
+            }
+        }
+    }
+    
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+     }
+     .title {
+        &_fz48 {
+            font-size: 26px;
+        }
+    }
+    .menu {
+        &__block {
+            width: 250px;
+            padding-left: 20px;
+        }
+    }
+    .promo {
+        &__btns {
+            margin-top: 32px;
+        }
+        &__title {
+            width: 290px;
+        }
+        
+    }
+    .bio {
+        &__wrapper {
+            grid-template: 340px auto auto / 1fr;
+        }
+        &__skills {
+            grid-template-columns: 1fr;
+        }
+    }
+}

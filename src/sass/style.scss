@@ -11,6 +11,11 @@
 @import 'blocks/bio';
 @import 'blocks/resume';
 @import 'blocks/skills';
+@import 'blocks/portfolio';
+@import 'blocks/prices';
+@import 'blocks/contacts';
+
+
 
 
 
@@ -36,3 +41,5 @@ body {
     border: 2px solid $divider-color;
     margin: 25px auto 0 auto;
 }
+
+@import 'blocks/media';

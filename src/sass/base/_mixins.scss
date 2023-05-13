@@ -12,3 +12,27 @@
     animation: circle_anim 3.3s ease-in-out infinite;
     }
 }
+
+@mixin underline {
+    &:before {
+        content: '';
+        position: absolute;
+        width: 67px;
+        border: 1px solid $divider-color;
+        top: 47px;
+        left: 22px;
+        transition: 0.4s all;
+    }
+}
+
+@mixin underline_w {
+    &:before {
+        content: '';
+        position: absolute;
+        width: 377px;
+        border: 1px solid $divider-color;
+        top: 47px;
+        left: 22px;
+        transition: 1.3s all;
+    }
+}
